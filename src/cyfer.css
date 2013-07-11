@@ -1,0 +1,220 @@
+html {
+	margin-left: -33px !important;
+	margin-right:33px;
+}
+
+body.cyfer.desktop-frame #toolbar_content,
+body.cyfer.desktop-frame .greyout,
+body.cyfer.desktop-frame #actionsheet {
+	margin-left: 0px !important;
+	left: 33px !important;
+}
+
+body.cyfer.desktop-frame #content {
+	top: 0 !important;
+	padding-top: 44px !important;
+	bottom: 0 !important;
+}
+
+body.cyfer.desktop-frame #splash {
+	max-width: 320px;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+}
+
+body.cyfer.desktop-frame #keyboard-holder {
+	left: 33px;
+}
+
+body.cyfer.desktop-frame #keyboard-holder #keyboard {
+	left: 0px !important;
+}
+
+/* Green Background Override */
+
+#recover-password,
+#recover-gliph,
+#claim,
+#claim2,
+#login,
+#reset-password {
+	background-repeat: repeat !important;
+}
+
+/* Frame Overrides */
+
+body.cyfer #bg-left {
+	display: none;
+}
+
+body.cyfer #bg-right {
+	display: none;
+}
+
+body.cyfer.desktop-frame #apps {
+	display: none;
+}
+
+body.cyfer.desktop-frame {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: none;
+	background-repeat: none;
+}
+
+/* Frame options */
+
+body.cyfer.desktop-frame #toolbar,
+body.cyfer.desktop-frame #shade,
+body.cyfer.desktop-frame #toolbar_content,
+body.cyfer.desktop-frame #actionsheet-holder,
+body.cyfer.desktop-frame #actionsheet,
+body.cyfer.desktop-frame #actionsheet-holder .greyout,
+body.cyfer.desktop-frame #message-entry,
+body.cyfer.desktop-frame #search-entry,
+body.cyfer.desktop-frame #tabbar,
+body.cyfer.desktop-frame #tabbar-content,
+body.cyfer.desktop-frame #keyboard,
+body.cyfer.desktop-frame #content,
+body.cyfer.desktop-frame #content-overlay {
+    width: 100%;
+}
+body.cyfer.desktop-frame #toolbar,
+body.cyfer.desktop-frame #shade,
+body.cyfer.desktop-frame.blade #blade,
+body.cyfer.desktop-frame #toolbar_content,
+body.cyfer.desktop-frame #actionsheet-holder,
+body.cyfer.desktop-frame #actionsheet,
+body.cyfer.desktop-frame #actionsheet-holder .greyout,
+body.cyfer.desktop-frame #message-entry,
+body.cyfer.desktop-frame #search-entry,
+body.cyfer.desktop-frame #tabbar,
+body.cyfer.desktop-frame #tabbar-content,
+body.cyfer.desktop-frame #keyboard,
+body.cyfer.desktop-frame #content,
+body.cyfer.desktop-frame #content-overlay
+{
+    left: 0px;
+}
+body.cyfer.desktop-frame #toolbar,
+body.cyfer.desktop-frame #shade,
+body.cyfer.desktop-frame #blade,
+body.cyfer.desktop-frame #toolbar_content,
+body.cyfer.desktop-frame #actionsheet-holder .greyout,
+body.cyfer.desktop-frame #content,
+body.cyfer.desktop-frame #content-overlay,
+body.cyfer.desktop-frame #search-entry
+{
+    top: 0px;
+}
+body.cyfer.desktop-frame #actionsheet-holder,
+body.cyfer.desktop-frame #actionsheet,
+body.cyfer.desktop-frame #actionsheet-holder .greyout,
+body.cyfer.desktop-frame #message-entry,
+body.cyfer.desktop-frame #content,
+body.cyfer.desktop-frame #content-overlay
+{
+    bottom: 0px;
+}
+body.cyfer.desktop-frame .greyout {
+    height: 100%;
+}
+
+body.cyfer #content > div:first-child {
+	min-height: 100%;
+}
+
+body.cyfer.desktop-frame #blade {
+	max-height: 100%;
+}
+
+/* Login Overrides */
+
+#login #login-password {
+	height: 48px;
+	box-sizing: border-box;
+	display: block;
+	width: 246px;
+	margin: 0 auto;
+}
+
+/* Activity Overrides */
+
+body.cyfer h2.black-gradient {
+	width: 100% !important;
+}
+
+body.cyfer #activity .activity-item h3,
+body.cyfer #activity .pending-item h3 {
+	width: auto;
+}
+
+body.cyfer #activity .activity-item p,
+body.cyfer #activity .pending-item p {
+	width: 100%;
+}
+
+/* Cloaked Email Override */
+
+body.cyfer #content h3 {
+	padding-left: 20px;
+}
+
+body.cyfer .table-row {
+	width: auto;
+	margin-left: 15px;
+	margin-right: 15px;
+	box-sizing: border-box;
+}
+
+/* Connections Overrides */
+
+body.cyfer #connections {
+	padding-top: 40px;
+}
+
+body.cyfer #search-entry #search-input {
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 7px;
+	box-sizing: border-box;
+}
+
+body.cyfer #search-entry #search-input input {
+	margin: 0;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+/* Messages Overrides */
+
+body.cyfer #messages {
+}
+
+body.cyfer #messages .message-item {
+	max-width: 100%;
+}
+
+body.cyfer #message-entry #message-input {
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 7px 75px 5px 45px;
+	box-sizing: border-box;
+}
+
+body.cyfer #message-entry #message-input textarea {
+	margin: 0;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+body.cyfer #message-entry #message-input #message-options {
+	width: auto;
+	padding: 0 9px 0 2px;
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+}

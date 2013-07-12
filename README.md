@@ -6,7 +6,9 @@ Feel free to fork this extension and use this as a base for your own custom Glip
 
 INSTALLATION
 
-  Start using Cyfer by installing it in Chrome:
+  You can install the extension via the Chrome Web Store from https://chrome.google.com/webstore/detail/cyfer-custom-responsive-s/bdgabfibghdpfpjbhmcppkggpppeelnf
+
+  Or to hack on it, start by installing Cyfer in Chrome locally:
 
   - Download Cyfer via git clone, or from https://github.com/tomhodgins/cyfer/archive/master.zip
   - Visit chrome://extensions in your browser, and expand "Development mode" (top right).

@@ -3,45 +3,7 @@ html {
 	margin-right:33px;
 }
 
-body.cyfer.desktop-frame #toolbar_content,
-body.cyfer.desktop-frame .greyout,
-body.cyfer.desktop-frame #actionsheet {
-	margin-left: 0px !important;
-	left: 33px !important;
-}
-
-body.cyfer.desktop-frame #content {
-	top: 0 !important;
-	padding-top: 44px !important;
-	bottom: 0 !important;
-}
-
-body.cyfer.desktop-frame #splash {
-	max-width: 320px;
-	margin: 0 auto;
-	background-repeat: no-repeat;
-}
-
-body.cyfer.desktop-frame #keyboard-holder {
-	left: 33px;
-}
-
-body.cyfer.desktop-frame #keyboard-holder #keyboard {
-	left: 0px !important;
-}
-
-/* Green Background Override */
-
-#recover-password,
-#recover-gliph,
-#claim,
-#claim2,
-#login,
-#reset-password {
-	background-repeat: repeat !important;
-}
-
-/* Frame Overrides */
+/* Remove Gliph Frame */
 
 body.cyfer #bg-left {
 	display: none;
@@ -64,6 +26,34 @@ body.cyfer.desktop-frame {
 	background-repeat: none;
 }
 
+body.cyfer.desktop-frame #toolbar_content,
+body.cyfer.desktop-frame .greyout,
+body.cyfer.desktop-frame #actionsheet {
+	margin-left: 0px !important;
+	left: 33px !important;
+}
+
+body.cyfer.desktop-frame #content {
+	top: 0 !important;
+	padding-top: 44px !important;
+	bottom: 0 !important;
+	background-repeat: repeat;
+	background-size: 320px 436px;
+	}
+}
+
+body.cyfer.desktop-frame #content > div:first-child {
+	min-height: 100%;
+}
+
+body.cyfer.desktop-frame #blade {
+	max-height: 100%;
+}
+
+body.cyfer.desktop-frame #keyboard-holder {
+	left: 33px;
+}
+
 /* Frame options */
 
 body.cyfer.desktop-frame #toolbar,
@@ -76,7 +66,6 @@ body.cyfer.desktop-frame #message-entry,
 body.cyfer.desktop-frame #search-entry,
 body.cyfer.desktop-frame #tabbar,
 body.cyfer.desktop-frame #tabbar-content,
-body.cyfer.desktop-frame #keyboard,
 body.cyfer.desktop-frame #content,
 body.cyfer.desktop-frame #content-overlay {
     width: 100%;
@@ -118,26 +107,91 @@ body.cyfer.desktop-frame #content-overlay
 {
     bottom: 0px;
 }
+
+body.cyfer.desktop-frame #toolbar_content {
+	background-repeat: repeat;
+	background-size: 320px 44px;
+}
+
+/* Green Background Override */
+
+#recover-password,
+#recover-gliph,
+#claim,
+#claim2,
+#login,
+#reset-password {
+	background-repeat: repeat !important;
+}
+
+/* Greyout Styles */
+
 body.cyfer.desktop-frame .greyout {
     height: 100%;
+		width: 100%;
+		left: 0 !important;
 }
 
-body.cyfer #content > div:first-child {
-	min-height: 100%;
+body.cyfer #content-overlay img {
+	position: relative !important;
+	display: block;
+	width: auto;
+	max-width: 95%;
+	margin: 0 auto;
+	top: 40px !important;
+	max-height: 95%;
+	left: auto;
+	right: auto;
+	text-align: center;
 }
 
-body.cyfer.desktop-frame #blade {
-	max-height: 100%;
+body.cyfer .table-row .caption,
+body.cyfer .table-row .header {
+	margin-top: 5px;
+}
+
+body.cyfer .table-row .caption + .header {
+	margin-top: 0px !important;
+}
+
+body.cyfer .table-row .header + .caption {
+	margin-top: 3px;
 }
 
 /* Login Overrides */
 
-#login #login-password {
+body.cyfer #login #login-password {
 	height: 48px;
 	box-sizing: border-box;
 	display: block;
 	width: 246px;
+	margin: 0 auto 20px auto;
+}
+
+body.cyfer.desktop-frame #splash {
+	max-width: 320px;
 	margin: 0 auto;
+	background-repeat: no-repeat;
+}
+
+body.cyfer.desktop-frame #keyboard-holder {
+	width: 100%;
+}
+
+body.cyfer.desktop-frame #keyboard {
+	left: 50% !important;
+	margin-left: -160px;
+}
+
+body.cyfer #message-entry #message-input #message-send {
+	bottom: auto;
+	height: 30px;
+	top: 8px;
+}
+
+body.cyfer #message-entry #message-input #message-menu {
+	bottom: auto;
+	top: 3px;
 }
 
 /* Activity Overrides */
@@ -156,42 +210,15 @@ body.cyfer #activity .pending-item p {
 	width: 100%;
 }
 
-/* Cloaked Email Override */
+/* Messages Overrides */
 
-body.cyfer #content h3 {
-	padding-left: 20px;
-}
-
-body.cyfer .table-row {
-	width: auto;
-	margin-left: 15px;
-	margin-right: 15px;
-	box-sizing: border-box;
-}
-
-/* Connections Overrides */
-
-body.cyfer #connections {
-	padding-top: 40px;
-}
-
-body.cyfer #search-entry #search-input {
+body.cyfer #messages .ender {
+	position: static; 
 	display: block;
 	width: 100%;
 	margin: 0;
-	padding: 7px;
-	box-sizing: border-box;
-}
-
-body.cyfer #search-entry #search-input input {
-	margin: 0;
-	width: 100%;
-	box-sizing: border-box;
-}
-
-/* Messages Overrides */
-
-body.cyfer #messages {
+	padding: 0;
+	height: 100px;
 }
 
 body.cyfer #messages .message-item {
@@ -217,4 +244,109 @@ body.cyfer #message-entry #message-input #message-options {
 	padding: 0 9px 0 2px;
 	border-radius: 7px;
 	-webkit-border-radius: 7px;
+}
+
+body.cyfer #messages-delete {
+	width: 100%;
+	left: 0;
+	box-sizing: border-box;
+}
+
+/* Connections Overrides */
+
+body.cyfer #connections {
+	padding-top: 40px;
+}
+
+body.cyfer #content #connections-connections h3 {
+	padding-left: 0px;
+}
+
+body.cyfer #search-entry #search-input {
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 7px;
+	box-sizing: border-box;
+}
+
+body.cyfer #search-entry #search-input input {
+	margin: 0;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+body.cyfer #content #gliph-edit h3 {
+	padding-left: 20px;
+}
+
+body.cyfer #content #gliph h4 {
+	padding-left: 20px;
+}
+
+/* Cloaked Email Override */
+
+body.cyfer #content #email-cloaks h3,
+body.cyfer #email-cloaks-buy-more h3,
+body.cyfer #email-cloaks-get-more h3 {
+	padding-left: 20px;
+}
+
+body.cyfer .table-row {
+	width: auto;
+	margin-left: 15px;
+	margin-right: 15px;
+	box-sizing: border-box;
+}
+
+body.cyfer #email-cloak-create #email-cloak-create-label {
+	display: block;
+	width: 100%;
+	max-width: 96%;
+	box-sizing: border-box;
+	margin-left: 15px;
+	margin-right: 15px;
+	outline: none;
+	margin-top: 3px;
+}
+
+/* Invite Overrides */
+
+body.cyfer #content #invite h3 {
+	padding-left: 20px;
+}
+
+body.cyfer #invite .table-row.single input {
+	display: block;
+	width: 100%;
+	max-width: 96%;
+	box-sizing: border-box;
+	margin-left: 15px;
+	margin-right: 15px;
+	outline: none;
+	margin-top: 0px;
+}
+
+/* Store Overrides */
+
+body.cyfer #email-cloaks-buy-more .table-row.selectable {
+	display: block;
+	width: auto;
+	box-sizing: border-box;
+	margin: 0 60px 0 20px;
+}
+
+/* Settings Overrides */
+
+body.cyfer #content #settings h3,
+body.cyfer #content #facets h3 {
+	padding-left: 20px;
+}
+
+/* Animations */
+
+body.cyfer.desktop-frame.blade #blade,
+body.cyfer.no-blade #blade,
+body.cyfer.desktop-frame #content {
+	transition: all 0.2s ease-in-out !important;
 }

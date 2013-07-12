@@ -1,0 +1,59 @@
+/* Login Styles */
+/*
+html body.cyfer.desktop-frame #content {
+	background-image: none;
+	background-color: #eaeaea;
+}
+
+html body.cyfer.desktop-frame #splash {
+	display: block;
+	background: #fff url('/s/img/apps/logo.png') no-repeat;
+	background-position: center 50px !important;
+	width: 100%;
+	height: auto;
+	min-width: 0;
+	max-width: 500px;
+	min-height: 0;
+	max-height: 100%;
+	margin-top: 66px;
+	padding-bottom: 50px;
+	box-shadow: rgba(0,0,0,0.15) 0 10px 20px;
+}
+
+html body.cyfer.desktop-frame #splash .button {
+	margin-top: 150px;
+	position: relative;
+	display: inline-block;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding: 0;
+	background-color: #999;
+	border: 1px solid rgba(0,0,0,0.15);
+	border-radius: 2px;
+	box-shadow: rgba(0,0,0,.15) 0 3px 10px, inset rgba(255,255,255,.75) 0 1px 2px, inset rgba(0,0,0,.1) 0 -5px 20px;
+	overflow: visible;
+}
+
+html body.cyfer.desktop-frame #splash .button .button_content {
+	padding: 10px 20px;
+}
+
+html body.cyfer.desktop-frame #splash .button .button_bg {
+	display: none;
+}
+
+html body.cyfer #splash .button .button_content:hover,
+html body.cyfer #splash .button .button_content:active {
+	background: #37a42c;
+	box-shadow: rgba(0,0,0,.15) 0 3px 10px, inset rgba(255,255,255,.75) 0 1px 2px, inset rgba(0,0,0,.1) 0 -5px 20px;
+	border-radius: 2px;
+}
+
+html body.cyfer.desktop-frame #splash .claim,
+html body.cyfer.desktop-frame #splash .login {
+	background: #999;
+	background-image: none;
+	border-radius: 2px;
+}
+
+*/

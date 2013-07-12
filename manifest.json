@@ -77,7 +77,7 @@
   "content_scripts": [
     {
       "matches": ["https://gli.ph/*"],
-      "css": ["src/cyfer.css"],
+      "css": ["src/cyfer.css", "src/custom.css"],
       "js": ["src/jquery-2.0.3.min.js", "src/cyfer.js"]
     }
   ],

@@ -1,6 +1,6 @@
 {
 
-  "name": "Cyfer - Custom Skin for Gliph",
+  "name": "Cyfer - Custom responsive styles for Gliph",
   "version": "0.1",
   "description": "Building an alternative interface for Gliph",
   "icons": { "16": "icons/icon16.png",
@@ -16,8 +16,7 @@
   // http://code.google.com/chrome/extensions/pageAction.html
   "page_action": {
     "default_icon":  "icons/icon19.png", // optional
-    "default_title": "Action Title"     // optional; shown in tooltip
-    //"default_popup": "src/popup.html"    // optional
+    "default_title": "Cyfer"     // optional; shown in tooltip
   },
 
   //============================================================================
@@ -49,25 +48,6 @@
   // CSP - We need to add twitter API so the default code will work
   // http://developer.chrome.com/extensions/contentSecurityPolicy.html
   "content_security_policy": "script-src https://api.twitter.com; object-src 'self'",
-
-  //============================================================================
-  // CHANGING CHROME'S CHROME
-  //============================================================================
-
-  // http://code.google.com/chrome/extensions/omnibox.html
-  // "omnibox": { "keyword" : "aaron" },
-  // "icons": { "16": "16-full-color.png" }
-
-  // http://code.google.com/chrome/extensions/options.html
-  // "options_page": "options.html",
-
-  // http://code.google.com/chrome/extensions/override.html
-  // pageToOverride is one of: bookmarks history newtab
-  // "chrome_url_overrides" : { "pageToOverride": "myPage.html", } 
-
-  // http://code.google.com/chrome/extensions/dev/experimental.devtools.html
-  // Needs "experimental" permission
-  // "devtools_page": "devtools.html",
 
   //============================================================================
   // IMPLEMENTING THE INNARDS OF YOUR EXTENSION

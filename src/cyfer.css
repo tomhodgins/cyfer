@@ -212,13 +212,12 @@ body.cyfer #activity .pending-item p {
 
 /* Messages Overrides */
 
-body.cyfer #messages .ender {
-	position: static; 
+body.cyfer #messages:after {
+	content: "&nbsp;";
 	display: block;
 	width: 100%;
-	margin: 0;
-	padding: 0;
-	height: 100px;
+	height:100px;
+	color: transparent;
 }
 
 body.cyfer #messages .message-item {
